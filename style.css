@@ -34,3 +34,7 @@ a {
 a:focus, a:hover {
     color: #0085A1;
 }
+
+.return{
+    image-orientation: 90deg;
+}
