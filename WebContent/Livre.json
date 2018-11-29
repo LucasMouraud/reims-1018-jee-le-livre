@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "mon premier jour à Poudlard",
+    "content": "Ça y est !!! Enfin mon premier jour à Poudlard. J'en rêve depuis que j'ai reçu ma lettre d'admission, et je me retrouve enfin avec le choixpeau sur la tête.",
+    "next_pages": [2, 3, 4, 5],
+  },
+  {
+    "id": 2,
+    "title": "le choixpeau m'envoie chez Gryffondor",
+    "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+    "next_pages": [6, 7],
+  },
+  {
+    "id": 3,
+    "title": "le choixpeau m'envoie chez Poufsouffle",
+    "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+    "next_pages": [6, 7],
+  },
+  {
+    "id": 4,
+    "title": "le choixpeau m'envoie chez Serdaigle",
+    "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+    "next_pages": [6, 7],
+  },
+  {
+    "id": 5,
+    "title": "le choixpeau m'envoie chez Serpentard",
+    "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+    "next_pages": [6, 7],
+  },
+  {
+    "id": 6,
+    "title": "j'assure dans tous les cours",
+    "content": "Je sors de l'école et je trouve tout de suite un poste au ministère de la magie :)",
+    "next_pages": [],
+  },
+  {
+    "id": 7,
+    "title": "les cours c'est pas mon truc",
+    "content": "Pas grave : je termine l'école sans passer mon diplome, et j'ouvre une boutique de farces magiques :)",
+    "next_pages": [],
+  },
+]
