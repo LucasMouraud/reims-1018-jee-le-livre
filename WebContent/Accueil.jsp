@@ -18,7 +18,7 @@
 Durant cette aventure vous aurez à faire des choix qui impacteront votre histoire, 
 faites les bons pour avoir votre diplôme de sorcellerie.</p>
 
-
+<a href="Page1.jsp"> Start </a>
 
 </body>
 </html>
