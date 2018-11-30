@@ -1,4 +1,25 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32vh;
+  background: url(https://raw.githubusercontent.com/WildCodeSchool/reims-1018-jee-le-livre/ju_blog/images/home-ban.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
 
+h1 {
+  padding-top: 5%
+}
+
+img {
+    padding-top: 30px;
+    padding-right: 20px;
+}
 
 body {
     font-size: 20px;
