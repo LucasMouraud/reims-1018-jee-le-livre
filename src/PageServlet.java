@@ -33,7 +33,7 @@ public class PageServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		URL url = new URL("https://my-json-server.typicode.com/Evrardg/Json-file/posts/1");
+		URL url = new URL("https://my-json-server.typicode.com/wasthishelpful/Json-file/pages/1");
 		HttpURLConnection connection = null;
 		int status = 0;
 		try {
