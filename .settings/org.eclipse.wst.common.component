@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="reims-1018-jee-le-livre">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="reims-1018-jee-le-livre"/>
-        <property name="java-output-path" value="/reims-1018-jee-le-livre/build/classes"/>
-    </wb-module>
-</project-modules>
