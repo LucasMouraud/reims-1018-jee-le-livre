@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 /**
  * Servlet implementation class Page
  */
@@ -33,7 +36,7 @@ public class PageServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		URL url = new URL("https://my-json-server.typicode.com/WildCodeSchool/reims-1018-jee-le-livre/db");
+		URL url = new URL("https://my-json-server.typicode.com/WildCodeSchool/reims-1018-jee-le-livre/pages");
 		HttpURLConnection connection = null;
 		int status = 0;
 		try {
@@ -61,7 +64,18 @@ public class PageServlet extends HttpServlet {
 			}
 			in.close();
 			connection.disconnect();
+			
+	        //parser le fichier json
+	        JSONParser parser = new JSONParser();
+	        Object jsonParsed = null;
+	        try{
+	            jsonParsed = parser.parse(content.toString());
+	        } catch (ParseException e) {
+	            e.printStackTrace();
+	        }
+	        if(jsonParsed != null) {
 			response.getWriter().append(content);
+	        }
 		}
 	}
 	

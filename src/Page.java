@@ -31,7 +31,7 @@ public class Page {
 		return this.nextPages;
 	}
 
-	public void setNextPages(int[] id){
+	public void setNextPages(int[] nextPages){
 		this.nextPages = nextPages;
 	}
 
