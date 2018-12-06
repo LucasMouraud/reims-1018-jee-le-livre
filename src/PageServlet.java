@@ -1,20 +1,12 @@
-
-
-import java.io.BufferedReader;
+import java.util.List;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.ProtocolException;
-import java.net.URL;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 /**
  * Servlet implementation class Page
@@ -35,48 +27,28 @@ public class PageServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		URL url = new URL("https://my-json-server.typicode.com/WildCodeSchool/reims-1018-jee-le-livre/pages");
-		HttpURLConnection connection = null;
-		int status = 0;
-		try {
-			connection = (HttpURLConnection) url.openConnection();
-			connection.setRequestMethod("GET");
-			status = connection.getResponseCode();
+		String text = "";
+		List<Integer> choices = new ArrayList<Integer>();
+		if(request.getParameter("choice")==null) {
+			text = "lorem ipsum";
+			choices.add(1);
+			choices.add(2);
 		}
-		catch(ProtocolException e) {
-			e.printStackTrace();
+		else if (request.getParameter("choice").equals("1")){
+			text = "toto";
+			choices.add(2);
+			choices.add(4);
+			choices.add(5);
+			choices.add(6);
 		}
-		catch(IOException e) {
-			e.printStackTrace();
+		else {
+			text = "hello world";
+			choices.add(1);
+			choices.add(7);			
 		}
-
-		if(status == 200) {
-			BufferedReader in = new BufferedReader(
-				new InputStreamReader(
-					connection.getInputStream()
-				)
-			);
-			String inputLine;
-			StringBuffer content = new StringBuffer();
-			while ((inputLine = in.readLine()) != null) {
-			    content.append(inputLine);
-			}
-			in.close();
-			connection.disconnect();
-			
-	        //parser le fichier json
-	        JSONParser parser = new JSONParser();
-	        Object jsonParsed = null;
-	        try{
-	            jsonParsed = parser.parse(content.toString());
-	        } catch (ParseException e) {
-	            e.printStackTrace();
-	        }
-	        if(jsonParsed != null) {
-			response.getWriter().append(content);
-	        }
-		}
+		request.setAttribute("text", text);
+		request.setAttribute("choices", choices);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request,response);
 	}
 	
 
@@ -85,6 +57,9 @@ public class PageServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		
+		
 		doGet(request, response);
 	}
 
