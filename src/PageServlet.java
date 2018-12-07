@@ -30,22 +30,52 @@ public class PageServlet extends HttpServlet {
 		String text = "";
 		List<Integer> choices = new ArrayList<Integer>();
 		if(request.getParameter("choice")==null) {
-			text = "lorem ipsum";
+			text = "Ça y est !!! Enfin mon premier jour à Poudlard. J'en rêve depuis que j'ai reçu ma lettre d'admission, et je me retrouve enfin avec le choixpeau sur la tête.";
 			choices.add(1);
 			choices.add(2);
-		}
-		else if (request.getParameter("choice").equals("1")){
-			text = "toto";
-			choices.add(2);
+			choices.add(3);
 			choices.add(4);
+		}
+
+		else if (request.getParameter("choice").equals("1")){
+			text = "Trop bien, Gryffondor c'est la maison que je voulais rejoindre. Je démarre les cours.";
 			choices.add(5);
 			choices.add(6);
 		}
-		else {
-			text = "hello world";
-			choices.add(1);
-			choices.add(7);			
+		
+		else if (request.getParameter("choice").equals("2")){
+			text = "Trop bien, Poufsouffle c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(5);
+			choices.add(6);
 		}
+		else if (request.getParameter("choice").equals("3")){
+			text = "Trop bien, Serdaigle c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(5);
+			choices.add(6);
+		}
+		else if (request.getParameter("choice").equals("4")){
+			text = "Trop bien, Serpentard c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(5);
+			choices.add(6);
+		}
+		
+		else if (request.getParameter("choice").equals("5")){
+			text = "Je sors de l'école et je trouve tout de suite un poste au ministère de la magie :)";
+			choices.add(7);
+		}
+		
+		else if (request.getParameter("choice").equals("6")){
+			text = "Pas grave : je termine l'école sans passer mon diplome, et j'ouvre une boutique de farces magiques :)";
+			choices.add(7);
+		}
+		else {
+			text = "Ça y est !!! Enfin mon premier jour à Poudlard. J'en rêve depuis que j'ai reçu ma lettre d'admission, et je me retrouve enfin avec le choixpeau sur la tête.";
+			choices.add(1);
+			choices.add(2);
+			choices.add(3);
+			choices.add(4);
+		}
+		
 		request.setAttribute("text", text);
 		request.setAttribute("choices", choices);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request,response);
