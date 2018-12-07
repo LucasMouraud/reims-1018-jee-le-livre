@@ -12,11 +12,11 @@
 <%= request.getAttribute("text") %>
 </p>
 <form action="" method="post">
-<% for (Integer value : (ArrayList<Integer>) request.getAttribute("choices")){ %>
+<% for (String value : (ArrayList<String>) request.getAttribute("choices")){ %>
 	<div>
 		<input type="radio" id="Choice1"
      name="choice" value="<%= value %>">
-    <label for="Choice1">Choix <%= value %></label>
+    <label for="Choice1"> <%= value %></label>
 	</div>
 <%}%>
   
