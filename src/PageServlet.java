@@ -30,12 +30,37 @@ public class PageServlet extends HttpServlet {
 		String text = "";
 		List<Integer> choices = new ArrayList<Integer>();
 		if(request.getParameter("choice")==null) {
-			text = "lorem ipsum";
+			text = "Ça y est !!! Enfin mon premier jour à Poudlard. J'en rêve depuis que j'ai reçu ma lettre d'admission, et je me retrouve enfin avec le choixpeau sur la tête.";
 			choices.add(1);
 			choices.add(2);
+			choices.add(3);
+			choices.add(4);
 		}
+
 		else if (request.getParameter("choice").equals("1")){
-			text = "toto";
+			text = "Trop bien, Gryffondor c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(2);
+			choices.add(4);
+			choices.add(5);
+			choices.add(6);
+		}
+		
+		else if (request.getParameter("choice").equals("2")){
+			text = "Trop bien, Poufsouffle c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(2);
+			choices.add(4);
+			choices.add(5);
+			choices.add(6);
+		}
+		else if (request.getParameter("choice").equals("3")){
+			text = "Trop bien, Serdaigle c'est la maison que je voulais rejoindre. Je démarre les cours.";
+			choices.add(2);
+			choices.add(4);
+			choices.add(5);
+			choices.add(6);
+		}
+		else if (request.getParameter("choice").equals("4")){
+			text = "Trop bien, Serpentard c'est la maison que je voulais rejoindre. Je démarre les cours.";
 			choices.add(2);
 			choices.add(4);
 			choices.add(5);
