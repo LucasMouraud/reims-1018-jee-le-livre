@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 32vh;
+  height: 38vh;
   background: url(https://raw.githubusercontent.com/WildCodeSchool/reims-1018-jee-le-livre/gh-pages/images/home-ban.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ header {
 }
 
 h1, h2, h3 {
-  padding-top: 3%
+  margin-top: 3%;
 }
 
 img {
@@ -56,6 +56,12 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-.return{
-    image-orientation: 90deg;
+.navbar {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.menu-bold{
+  font-weight: bold;
 }
