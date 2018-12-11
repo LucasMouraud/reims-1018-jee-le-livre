@@ -72,4 +72,9 @@ import org.json.simple.parser.ParseException;
 			}
 		}
 	}
+	
+	public Page getPage(int choice){
+        Page page = this.pages.get(choice);
+        return page;
+    }
 }

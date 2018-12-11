@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class PageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private PageManager pageManager;
+	PageManager pagemanager = new PageManager();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -31,7 +32,10 @@ public class PageServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		this.getServletContext().getRequestDispatcher("/WEB-INF/page.jsp").forward(request,response);
+		Page page1 = pageManager.getPage(0);
+		request.setAttribute("page1Title", page1.getTitle());
+		request.setAttribute("page1Content", page1.getContent());
+		this.getServletContext().getRequestDispatcher("/WEB-INF/pages/page.jsp").forward(request,response);
 	}
 	
 
