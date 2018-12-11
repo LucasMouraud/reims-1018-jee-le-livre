@@ -1,3 +1,5 @@
+package com.jeelelivre.pages;
+
 import java.util.List;
 import java.io.IOException;
 import java.util.ArrayList;

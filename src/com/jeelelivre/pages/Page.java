@@ -1,3 +1,4 @@
+package com.jeelelivre.pages;
 
 public class Page {
 
