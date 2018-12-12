@@ -18,7 +18,7 @@
     {
       "id": 2,
       "title": "Une rencontre à laquelle je ne m'attendais pas",
-      "content": "Le lendemain de la reception de la lettre, j'entends un bruit étrange qui me fait sursauter. Je sors de ma chambre et tombe nez à nez avec un géant ! Celui-ci me tent une lettre identique à celle que j'ai reçu la veille et me dit que je dois absolument l'ouvrir car c'est de la plus haute importance.",
+      "content": "Le lendemain de la reception de la lettre, j'entends un bruit étrange qui me fait sursauter. Je sors de ma chambre et tombe nez à nez avec un géant ! Celui-ci me tend une lettre identique à celle que j'ai reçu la veille et me dit que je dois absolument l'ouvrir car c'est de la plus haute importance.",
       "choices": [
         {
           "choice": "Bon, d'accord, j'ouvre la lettre",
@@ -119,7 +119,7 @@
           "nextPage": 10
         },
         {
-          "choice": "Écrire une punition avec une plume encorcelée",
+          "choice": "Écrire une punition avec une plume ensorcelée",
           "nextPage": 10
         },
         {
@@ -131,7 +131,7 @@
     {
       "id": 9,
       "title": "Je suis au top",
-      "content": "Je suis chanceux d'être à Poudlard, le chateau est vraiment impressionnant. Je file vite en cours sinon le professeur Rogue va me transformer en limace.",
+      "content": "Je suis chanceux d'être à Poudlard, le château est vraiment impressionnant. Je file vite en cours sinon le professeur Rogue va me transformer en limace.",
       "choices": [
         {
           "choice": "Suivre en cours pour être premier de la classe",
