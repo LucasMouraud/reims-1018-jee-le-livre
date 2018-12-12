@@ -82,12 +82,19 @@ import org.json.simple.parser.ParseException;
 		}
 	}
 	
-	public Page getPage(int pageIndex){
-        Page page = this.pages.get(pageIndex);
-        return page;
+	public ArrayList<Page> getAllPages(){
+        return this.pages;
     }
-	
-	public ArrayList<Choice> getAllChoices() {
-		return this.choices;
+	public Page getPageByIndex(int index){
+        return this.pages.get(index);
+    }
+	public Page getPageById(int id) {
+		for (var page : this.pages) {
+			if (page.getId() == id) {
+				return page;
+			}	
+		}
+		return null;
 	}
+	
 }

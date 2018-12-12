@@ -31,13 +31,17 @@ public class PageServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Page page = null;
+		if(request.getParameter("id") == null) {
+			page = this.pageManager.getPageByIndex(0);
+		}
+		else {
+			int id = Integer.parseInt(request.getParameter("id"));
+			
+			page = this.pageManager.getPageById(id);
+		}
 		
-		Page page1 = pageManager.getPage(0);
-		request.setAttribute("page1Title", page1.getTitle());
-		request.setAttribute("page1Content", page1.getContent());
-		
-		request.setAttribute("choicesContent", this.pageManager.getAllChoices());
-		
+		request.setAttribute("page", page);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/pages/page.jsp").forward(request,response);
 	}
 	

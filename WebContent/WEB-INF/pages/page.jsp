@@ -3,6 +3,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="com.jeelelivre.pages.Page" %>
 <%@ page import="com.jeelelivre.pages.Choice" %>
+<%Page thisPage = (Page) request.getAttribute("page"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,8 @@
 <title>Title</title>
 </head>
 <body>
-	<h1><%= request.getAttribute("page1Title") %></h1>
-	<p><%= request.getAttribute("page1Content") %></p>
-	<p><%= request.getAttribute("choicesContent") %></p>
+	<h1><%= thisPage.getTitle() %></h1>
+	<p><%= thisPage.getContent() %></p>
+	<p><%= thisPage.getChoices() %></p>
 </body>
 </html>  
