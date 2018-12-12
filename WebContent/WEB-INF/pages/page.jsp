@@ -11,8 +11,15 @@
 <title>Title</title>
 </head>
 <body>
+<nav>
+<a href="<%= request.getContextPath() %>/">Retour à l'accueil</a>
+</nav>
 	<h1><%= thisPage.getTitle() %></h1>
 	<p><%= thisPage.getContent() %></p>
-	<p><%= thisPage.getChoices() %></p>
+
+<% for(Choice choice : (List<Choice>) thisPage.getChoices()) { %>
+	<a href="<%= request.getContextPath() %>/pages?id=<%= choice.getNextPage() %>"><%= choice.getChoice()%></a>
+<%} %>
+	
 </body>
 </html>  
