@@ -13,6 +13,7 @@ import org.json.simple.parser.ParseException;
  public class PageManager {
 	
 	private ArrayList<Page> pages;
+	private ArrayList<Choice> choices;
 	
 	public PageManager() {
 		this.pages = new ArrayList<Page>();
@@ -85,4 +86,8 @@ import org.json.simple.parser.ParseException;
         Page page = this.pages.get(pageIndex);
         return page;
     }
+	
+	public ArrayList<Choice> getAllChoices() {
+		return this.choices;
+	}
 }
