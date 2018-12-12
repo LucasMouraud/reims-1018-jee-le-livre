@@ -47,5 +47,4 @@ public class Page {
 	public void setChoices(ArrayList<Choice> choices){
 		this.choices = choices;
 	}
-
 }

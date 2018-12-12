@@ -73,10 +73,8 @@ import org.json.simple.parser.ParseException;
 					JSONObject choiceObject = (JSONObject) jsonChoices.get(j);
 					int nextPage = Math.toIntExact((long) choiceObject.get("nextPage"));
 					String choice = (String) choiceObject.get("choice");
-					choices.add(new Choice(choice, nextPage));
-					
-				}
-				
+					choices.add(new Choice(choice, nextPage));		
+				}		
 				this.pages.add(new Page(id, title, content, choices));
 			}
 		}
@@ -85,9 +83,11 @@ import org.json.simple.parser.ParseException;
 	public ArrayList<Page> getAllPages(){
         return this.pages;
     }
+	
 	public Page getPageByIndex(int index){
         return this.pages.get(index);
     }
+	
 	public Page getPageById(int id) {
 		for (var page : this.pages) {
 			if (page.getId() == id) {
@@ -95,6 +95,5 @@ import org.json.simple.parser.ParseException;
 			}	
 		}
 		return null;
-	}
-	
+	}	
 }

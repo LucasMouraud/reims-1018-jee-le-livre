@@ -5,11 +5,9 @@ public class Choice {
 	private String choice;
 	private int nextPage;
 	
-
 	public Choice(String choice, int nextPage) {
 		this.choice = choice;
-		this.nextPage = nextPage;
-		
+		this.nextPage = nextPage;		
 	}
 
 	public String getChoice() {
