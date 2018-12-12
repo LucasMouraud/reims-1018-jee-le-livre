@@ -1,17 +1,19 @@
 package com.jeelelivre.pages;
 
+import java.util.ArrayList;
+
 public class Page {
 
 	private int id;
 	private String title;
 	private String content;
-	private int[] nextPages;
+	private ArrayList<Choice> choices;
 
-	public Page(int id, String title, String content, int[] nextPages){
+	public Page(int id, String title, String content, ArrayList<Choice> choices){
 		this.id = id;
 		this.title = title;
 		this.content = content;
-		this.nextPages = nextPages;
+		this.choices = choices;
 	}
 
 	public int getId(){
@@ -38,12 +40,12 @@ public class Page {
 		this.content = content;
 	}
 
-	public int[] getNextPages(){
-		return this.nextPages;
+	public ArrayList<Choice> getChoices(){
+		return this.choices;
 	}
 
-	public void setNextPages(int[] nextPages){
-		this.nextPages = nextPages;
+	public void setChoices(ArrayList<Choice> choices){
+		this.choices = choices;
 	}
 
 }

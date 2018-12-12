@@ -13,6 +13,7 @@ import org.json.simple.parser.ParseException;
  public class PageManager {
 	
 	private ArrayList<Page> pages;
+	private ArrayList<Choice> choices;
 	
 	public PageManager() {
 		this.pages = new ArrayList<Page>();
@@ -66,9 +67,17 @@ import org.json.simple.parser.ParseException;
 				int id = Math.toIntExact((long) pageObject.get("id"));
 				String title = (String) pageObject.get("title");
 				String content = (String) pageObject.get("content");
-				int[] nextPages = (int[]) pageObject.get("nextpages");
+				var choices = new ArrayList<Choice>();
+				JSONArray jsonChoices = (JSONArray) pageObject.get("choices");
+				for(int j=0; j<jsonChoices.size(); j++){
+					JSONObject choiceObject = (JSONObject) jsonChoices.get(j);
+					int nextPage = Math.toIntExact((long) choiceObject.get("nextPage"));
+					String choice = (String) choiceObject.get("choice");
+					choices.add(new Choice(choice, nextPage));
+					
+				}
 				
-				this.pages.add(new Page(id, title, content, nextPages));
+				this.pages.add(new Page(id, title, content, choices));
 			}
 		}
 	}
@@ -77,4 +86,8 @@ import org.json.simple.parser.ParseException;
         Page page = this.pages.get(pageIndex);
         return page;
     }
+	
+	public ArrayList<Choice> getAllChoices() {
+		return this.choices;
+	}
 }

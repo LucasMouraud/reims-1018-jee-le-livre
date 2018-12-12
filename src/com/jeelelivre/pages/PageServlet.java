@@ -35,6 +35,9 @@ public class PageServlet extends HttpServlet {
 		Page page1 = pageManager.getPage(0);
 		request.setAttribute("page1Title", page1.getTitle());
 		request.setAttribute("page1Content", page1.getContent());
+		
+		request.setAttribute("choicesContent", this.pageManager.getAllChoices());
+		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/pages/page.jsp").forward(request,response);
 	}
 	
