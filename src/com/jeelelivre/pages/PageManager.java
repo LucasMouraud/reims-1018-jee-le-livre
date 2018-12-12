@@ -82,8 +82,11 @@ import org.json.simple.parser.ParseException;
 		}
 	}
 	
-	public ArrayList<Page> getPage(){
+	public ArrayList<Page> getAllPages(){
         return this.pages;
+    }
+	public Page getPageByIndex(int index){
+        return this.pages.get(index);
     }
 	public Page getPageById(int id) {
 		for (var page : this.pages) {
