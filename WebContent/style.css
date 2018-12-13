@@ -2,7 +2,7 @@
 
 header {
   margin-top:1%;
-  background: url(https://zupimages.net/up/18/50/iry0.jpg);
+  background: url(https://zupimages.net/up/18/50/6r96.gif);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -15,12 +15,10 @@ header {
   color: black; 
 }
 
-.link:hover { color: blue; 
+.link:hover { 
+	color: #474747; 
+	text-decoration: none;
 
-}
-
-nav a {
-  text-decoration: none;
 }
 
 h1 {
@@ -34,7 +32,7 @@ h1 {
 h2 {
 	font-family: 'Roboto Slab', serif;
 	color : white;
-	margin-top:5%;
+	margin-top:13%;
 	display: flex;
     justify-content: center;
 }
@@ -80,4 +78,8 @@ footer {
   color: black; 
 }
 
-.link2:hover { color: red; 
+.link2:hover { 
+	color: red;
+	color: #474747; 
+	text-decoration: none;
+}
