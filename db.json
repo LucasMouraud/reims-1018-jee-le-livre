@@ -52,14 +52,14 @@
     {
       "id": 4,
       "title": "Le choixpeau m'envoie chez Gryffondor",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malfoy me provoque en duel.",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
       "choices": [
         {
           "choice": "Accepter le duel",
           "nextPage": 8
         },
         {
-          "choice": "Refuser, je ne suis contre la violence",
+          "choice": "Refuser, je suis contre la violence",
           "nextPage": 9
         }
       ]
@@ -67,14 +67,14 @@
     {
       "id": 5,
       "title": "Le choixpeau m'envoie chez Poufsouffle",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malfoy me provoque en duel.",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
       "choices": [
         {
           "choice": "Accepter le duel",
           "nextPage": 8
         },
         {
-          "choice": "Refuser, je ne suis contre la violence",
+          "choice": "Refuser, je suis contre la violence",
           "nextPage": 9
         }
       ]
@@ -82,14 +82,14 @@
     {
       "id": 6,
       "title": "Le choixpeau m'envoie chez Serdaigle",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malfoy me provoque en duel.",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
       "choices": [
         {
           "choice": "Accepter le duel",
           "nextPage": 8
         },
         {
-          "choice": "Refuser, je ne suis contre la violence",
+          "choice": "Refuser, je suis contre la violence",
           "nextPage": 9
         }
       ]
@@ -97,7 +97,7 @@
     {
       "id": 7,
       "title": "Le choixpeau m'envoie chez Serpentard",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malfoy me propose de faire un duel contre Gryffondor.",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me propose de faire un duel contre Gryffondor.",
       "choices": [
         {
           "choice": "Accepter, j'adore chercher les ennuis",
@@ -112,10 +112,10 @@
     {
       "id": 8,
       "title": "C'est l'heure du duel",
-      "content": "Oh non, Rusard nous prend en flagrand déli et nous envoie dans le bureau de Dumbledore sur le champ. C'est vraiment effrayant.",
+      "content": "Oh non, Rusard nous prend en flagrand délit et nous envoie dans le bureau de Dumbledore sur le champ. C'est vraiment effrayant.",
       "choices": [
         {
-          "choice": "Proposer de lustrer les coupes de quiditch",
+          "choice": "Proposer de lustrer les coupes de quidditch",
           "nextPage": 10
         },
         {
@@ -146,7 +146,7 @@
     {
       "id": 10,
       "title": "Rendez-vous avec le grand Dumbledore",
-      "content": "Tout est pardonné, le professeur Dumbledore ne fair pas si peur que ça. Je file vite en cours car j'ai trop peur de retomber sur Rusard, il rode partout !",
+      "content": "Tout est pardonné, le professeur Dumbledore ne fait pas si peur que ça. Je file vite en cours car j'ai trop peur de retomber sur Rusard, il rode partout !",
       "choices": [
         {
           "choice": "Suivre en cours pour être premier de la classe",
