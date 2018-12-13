@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 30vh;
-  width: 80vw;
-  background: url(https://zupimages.net/up/18/50/5fkz.jpg);
+  height: 150px;
+  margin-top:1%;
+  background: url(https://zupimages.net/up/18/50/g6a3.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% ;
+}
+
+.intro {
+  padding-top: 10%;
 }
 
 .link {
@@ -30,16 +30,29 @@ h1 {
 	color : white;
 	display: flex;
     justify-content: center;
-    height: 3vh;
 }
 
 h2 {
 	font-family: 'Roboto Slab', serif;
 	color : white;
-	margin-top:10vh;
-	margin-right: auto;
-	margin-left: auto;
+	margin-top:3%;
+	display: flex;
     justify-content: center;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	margin-top:1%;
+}
+
+h4 {
+	font-family: 'Roboto Slab', serif;
+	margin-right: 1%;
+	color: white; 
+	font-size: 15px;
+	display: flex;
+    justify-content: right;
 }
 
 p {
@@ -51,5 +64,21 @@ p {
 	margin-right: 1%;
 	margin-bottom: 2%;
 	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
 }
 
+footer {
+  height: 150px;
+  margin-top:5%;
+  background-color: #190801;
+  background-position: center;
+  font-family: 'Roboto Slab', serif;
+  
+}
+
+.link2 {
+  margin-right: 1%;
+  color: white; 
+}
+
+.link2:hover { color: red; 
