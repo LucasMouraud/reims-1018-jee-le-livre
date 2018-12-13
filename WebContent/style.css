@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  width: 80vw;
+  background: url(https://zupimages.net/up/18/50/5fkz.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% ;
+}
+
+.link {
+  color: black; 
+}
+
+.link:hover { color: red; 
+
+}
+
 nav a {
   text-decoration: none;
 }
@@ -7,10 +27,19 @@ nav a {
 h1 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
+	color : white;
+	display: flex;
+    justify-content: center;
+    height: 3vh;
 }
 
 h2 {
 	font-family: 'Roboto Slab', serif;
+	color : white;
+	margin-top:10vh;
+	margin-right: auto;
+	margin-left: auto;
+    justify-content: center;
 }
 
 p {

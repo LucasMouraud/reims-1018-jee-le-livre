@@ -18,10 +18,18 @@
 
 </head>
 <body class="container">
+<header>
+
+	<h1>Votre aventure à Poudlard.</h1>
+	<h2>Le livre dont vous êtes le sorcier/la sorcière.</h2>
+	
+</header>
+
 	<nav>
-		<a href="<%=request.getContextPath()%>/"><img src="https://raw.githubusercontent.com/WildCodeSchool/reims-1018-jee-le-livre/gh-pages/images/logo_castle.png" width="50" height="50" alt="Retour à l'accueil"></a>
-		<a href="<%=request.getContextPath()%>/">Retour à l'accueil</a>
+			<a href="<%=request.getContextPath()%>/" class="link"><img src="https://raw.githubusercontent.com/WildCodeSchool/reims-1018-jee-le-livre/gh-pages/images/logo_castle.png" width="50" height="50" alt="Retour à l'accueil"></a>
+			<a href="<%=request.getContextPath()%>/" class= "link">Retour à l'accueil</a>
 	</nav>
+	
 	<h1><%=thisPage.getTitle()%></h1>
 	<hr>
 	<p><%=thisPage.getContent()%></p>
