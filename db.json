@@ -2,97 +2,178 @@
   "pages": [
     {
       "id": 1,
-      "title": "mon premier jour à Poudlard",
-      "content": "Ça y est !!! Enfin mon premier jour à Poudlard. J'en rêve depuis que j'ai reçu ma lettre d'admission, et je me retrouve enfin avec le choixpeau sur la tête.",
+      "title": "Une lettre magique",
+      "content": "Une lettre étrange est arrivée ce matin avec mon nom et mon adresse écrits à la plume. Je ne m'attendais pas à recevoir du courrier.",
       "choices": [
         {
-          "choice": "Je suis courageux",
-          "nextPage": 2
-        },
-        {
-          "choice": "Je suis loyal",
+          "choice": "Ouvrir la lettre",
           "nextPage": 3
         },
         {
-          "choice": "Je suis sage",
-          "nextPage": 4
-        },
-        {
-          "choice": "Je suis malin",
-          "nextPage": 5
+          "choice": "Jeter la lettre, c'est trop suspect",
+          "nextPage": 2
         }
       ]
     },
     {
       "id": 2,
-      "title": "le choixpeau m'envoie chez Gryffondor",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+      "title": "Une rencontre à laquelle je ne m'attendais pas",
+      "content": "Le lendemain de la reception de la lettre, j'entends un bruit étrange qui me fait sursauter. Je sors de ma chambre et tombe nez à nez avec un géant ! Celui-ci me tend une lettre identique à celle que j'ai reçu la veille et me dit que je dois absolument l'ouvrir car c'est de la plus haute importance.",
       "choices": [
         {
-          "choice": "Je suis le premier de la classe",
-          "nextPage": 6
-        },
-        {
-          "choice": "Je n'aime pas l'école",
-          "nextPage": 7
+          "choice": "Bon, d'accord, j'ouvre la lettre",
+          "nextPage": 3
         }
       ]
     },
     {
       "id": 3,
-      "title": "le choixpeau m'envoie chez Poufsouffle",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+      "title": "Mon premier jour à Poudlard",
+      "content": "Ça y est, enfin mon premier jour à Poudlard ! J'en rêve depuis que j'ai reçu ma lettre d'admission. Je me retrouve enfin avec le choixpeau sur la tête. Dans quelle maison va-t-il m'envoyer ?",
       "choices": [
         {
-          "choice": "Je suis le premier de la classe",
+          "choice": "Je suis courageux",
+          "nextPage": 4
+        },
+        {
+          "choice": "Je suis loyal",
+          "nextPage": 5
+        },
+        {
+          "choice": "Je suis sage",
           "nextPage": 6
         },
         {
-          "choice": "Je n'aime pas l'école",
+          "choice": "Je suis malin",
           "nextPage": 7
         }
       ]
     },
     {
       "id": 4,
-      "title": "le choixpeau m'envoie chez Serdaigle",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+      "title": "Le choixpeau m'envoie chez Gryffondor",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
       "choices": [
         {
-          "choice": "Je suis le premier de la classe",
-          "nextPage": 6
+          "choice": "Accepter le duel",
+          "nextPage": 8
         },
         {
-          "choice": "Je n'aime pas l'école",
-          "nextPage": 7
+          "choice": "Refuser, je suis contre la violence",
+          "nextPage": 9
         }
       ]
     },
     {
       "id": 5,
-      "title": "le choixpeau m'envoie chez Serpentard",
-      "content": "Trop bien, c'est la maison que je voulais rejoindre. Je démarre les cours.",
+      "title": "Le choixpeau m'envoie chez Poufsouffle",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
       "choices": [
         {
-          "choice": "Je suis le premier de la classe",
-          "nextPage": 6
+          "choice": "Accepter le duel",
+          "nextPage": 8
         },
         {
-          "choice": "Je n'aime pas l'école",
-          "nextPage": 7
+          "choice": "Refuser, je suis contre la violence",
+          "nextPage": 9
         }
       ]
     },
     {
       "id": 6,
-      "title": "j'assure dans tous les cours",
-      "content": "Je sors de l'école et je trouve tout de suite un poste au ministère de la magie :)",
-      "choices": []
+      "title": "Le choixpeau m'envoie chez Serdaigle",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me provoque en duel.",
+      "choices": [
+        {
+          "choice": "Accepter le duel",
+          "nextPage": 8
+        },
+        {
+          "choice": "Refuser, je suis contre la violence",
+          "nextPage": 9
+        }
+      ]
     },
     {
       "id": 7,
-      "title": "les cours c'est pas mon truc",
-      "content": "Pas grave : je termine l'école sans passer mon diplome, et j'ouvre une boutique de farces magiques :)",
+      "title": "Le choixpeau m'envoie chez Serpentard",
+      "content": "Trop bien, c'est la maison que je voulais rejoindre. Dès le premier jour, Malefoy me propose de faire un duel contre Gryffondor.",
+      "choices": [
+        {
+          "choice": "Accepter, j'adore chercher les ennuis",
+          "nextPage": 8
+        },
+        {
+          "choice": "Refuser, nous sommes là pour étudier !",
+          "nextPage": 9
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "C'est l'heure du duel",
+      "content": "Oh non, Rusard nous prend en flagrand délit et nous envoie dans le bureau de Dumbledore sur le champ. C'est vraiment effrayant.",
+      "choices": [
+        {
+          "choice": "Proposer de lustrer les coupes de quidditch",
+          "nextPage": 10
+        },
+        {
+          "choice": "Écrire une punition avec une plume ensorcelée",
+          "nextPage": 10
+        },
+        {
+          "choice": "Fuir et se cacher dans la foret interdite",
+          "nextPage": 11
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Je suis au top",
+      "content": "Je suis chanceux d'être à Poudlard, le château est vraiment impressionnant. Je file vite en cours sinon le professeur Rogue va me transformer en limace.",
+      "choices": [
+        {
+          "choice": "Suivre en cours pour être premier de la classe",
+          "nextPage": 12
+        },
+        {
+          "choice": "Finalement l'école ce n'est pas mon truc",
+          "nextPage": 13
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Rendez-vous avec le grand Dumbledore",
+      "content": "Tout est pardonné, le professeur Dumbledore ne fait pas si peur que ça. Je file vite en cours car j'ai trop peur de retomber sur Rusard, il rode partout !",
+      "choices": [
+        {
+          "choice": "Suivre en cours pour être premier de la classe",
+          "nextPage": 12
+        },
+        {
+          "choice": "Finalement l'école ce n'est pas mon truc",
+          "nextPage": 13
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "La forêt fait vraiment peur",
+      "content": "Je finis par être retrouvé dans la forêt et me fais virer de l'école. Je vais finir comme Hagrid, à moins de postuler pour les forces du mal, il parait qu'ils recrutent.",
+      "choices": []
+    },
+    {
+      "id": 12,
+      "title": "J'assure dans tous les cours",
+      "content": "Je sors de l'école et je trouve tout de suite un poste au ministère de la magie !",
+      "choices": []
+    },
+    {
+      "id": 13,
+      "title": "Les cours de magie c'est trop barbant",
+      "content": "Pas grave : je termine l'école sans passer mon diplome, et j'ouvre une boutique de farces magiques !",
       "choices": []
     }
   ],

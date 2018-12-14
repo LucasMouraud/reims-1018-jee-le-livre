@@ -1,16 +1,35 @@
 @charset "UTF-8";
 
-nav a {
-  text-decoration: none;
+header {
+  	background: url(https://raw.githubusercontent.com/WildCodeSchool/reims-1018-jee-le-livre/gh-pages/images/livrejee.gif);
+  	height: 32vh;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	display: flex;
+  	flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-	font-family: 'Roboto Slab', serif;
+	font-size: 45px;
 	font-weight: bold;
 }
 
 h2 {
+	font-size: 22px;
+	padding-top: 1%;
+}
+
+h1, h2 {
 	font-family: 'Roboto Slab', serif;
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	margin-top: 1%;
 }
 
 p {
@@ -18,9 +37,42 @@ p {
 	font-size: 20px;
 }
 
+nav {
+	margin-top: 25px;
+}
+
+.intro {
+	padding-top: 4%;
+}
+
 .choices {
 	margin-right: 1%;
 	margin-bottom: 2%;
 	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
 }
 
+.home-link {
+	color: black;
+}
+
+.home-link:hover {
+	color: #474747; 
+	text-decoration: none;
+}
+
+.credit-links{
+  	color: white;
+}
+
+.credit-links:hover{
+  	color: #FEE2CC;
+ 	text-decoration: none;
+}
+
+h4 {
+	color: white;
+	font-size: 1.6vh;
+	text-align: right;
+	margin-top: -30px; 
+}
