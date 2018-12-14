@@ -20,12 +20,14 @@
 	
 <main class="container">
 
-	<p class="intro">Bienvenue dans "Votre aventure à Poudlard", le livre dont vous
-		serez le sorcier/ la sorcière. Durant cette aventure vous aurez à
-		faire des choix qui impacteront votre histoire, faites les bons pour
-		avoir votre diplôme de sorcellerie.</p>
+<h4><a href="https://www.linkedin.com/in/justine-dubois-pro/" class="credit-links" target="_blank">Justine</a> - <a href="https://www.linkedin.com/in/gaetan-evrard-585799172/" class="credit-links" target="_blank">Gaëtan</a> - <a href="https://www.linkedin.com/in/lucas-mouraud-chasset-4b7b99172/" class="credit-links" target="_blank">Lucas</a> - <a href="https://www.linkedin.com/in/nicolas-luzurier/" class="credit-links" target="_blank">Nicolas</a></h4>
 
-	<a href="pages" class="btn btn-outline-dark"> Start </a>
+	<p class="intro">Bienvenue dans "Votre aventure à Poudlard", le livre dont vous
+		serez le sorcier/ la sorcière. Durant cette aventure vous vous plongerez dans l'univers d'Harry Potter et aurez à
+		faire des choix qui impacteront votre histoire. Faites les bons pour
+		avoir votre diplôme de sorcellerie !</p>
+
+	<a href="pages" class="start btn btn-outline-dark"> Start </a>
 	
 </main>	
 
