@@ -22,8 +22,8 @@
 
 <header>
 
-	<h1>Votre aventure à Poudlard.</h1>
-	<h2>Le livre dont vous êtes le sorcier/la sorcière.</h2>
+	<h1>Votre aventure à Poudlard</h1>
+	<h2>Le livre dont vous êtes le sorcier/la sorcière</h2>
 	
 </header>
 
