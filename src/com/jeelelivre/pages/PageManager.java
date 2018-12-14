@@ -20,7 +20,7 @@ import org.json.simple.parser.ParseException;
 
 		URL url = null;
 		try {
-			url = new URL("https://my-json-server.typicode.com/JuDubois/json-livre/pages");
+			url = new URL("https://my-json-server.typicode.com/WildCodeSchool/reims-1018-jee-le-livre/pages");
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
